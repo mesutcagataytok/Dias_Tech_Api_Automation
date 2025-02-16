@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/features\/common\/CreateBooking[1:7]","start":1739715820718,"end":1739715822650,"title":"src\/test\/java\/features\/common\/CreateBooking[1:7] 17:23:40.718-17:23:42.650 Create Booking"},{"id":2,"group":1,"content":"src\/test\/java\/features\/common\/CreateToken[1:12]","start":1739715824044,"end":1739715824580,"title":"src\/test\/java\/features\/common\/CreateToken[1:12] 17:23:44.044-17:23:44.580 Verify that when sending the request with the correct username and password you receive code 200"},{"id":3,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/createBooking\/CreateBooking[1:7]","start":1739715824907,"end":1739715825347,"title":"src\/test\/java\/features\/restfulBooker\/createBooking\/CreateBooking[1:7] 17:23:44.907-17:23:45.347 Create Booking"},{"id":4,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/createToken\/CreateToken[1:12]","start":1739715825502,"end":1739715825933,"title":"src\/test\/java\/features\/restfulBooker\/createToken\/CreateToken[1:12] 17:23:45.502-17:23:45.933 Verify that when sending the request with the correct username and password you receive code 200"},{"id":5,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/deleteBooking\/DeleteBooking[1:7]","start":1739715826037,"end":1739715827325,"title":"src\/test\/java\/features\/restfulBooker\/deleteBooking\/DeleteBooking[1:7] 17:23:46.037-17:23:47.325"},{"id":6,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/getBooking\/GetBooking[1:8]","start":1739715827806,"end":1739715828395,"title":"src\/test\/java\/features\/restfulBooker\/getBooking\/GetBooking[1:8] 17:23:47.806-17:23:48.395 Check correct request with reservation id receive code 200"},{"id":7,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/getBookingId\/GetBookingId[1:9]","start":1739715828513,"end":1739715829375,"title":"src\/test\/java\/features\/restfulBooker\/getBookingId\/GetBookingId[1:9] 17:23:48.513-17:23:49.375 Check correct request with reservation id receive code 200"},{"id":8,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/healthCheck\/HealthCheck[1:7]","start":1739715829492,"end":1739715829914,"title":"src\/test\/java\/features\/restfulBooker\/healthCheck\/HealthCheck[1:7] 17:23:49.492-17:23:49.914 Check correct request to check service status receive 201"},{"id":9,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/partialUpdateBooking\/PartialUpdateBooking[1:9]","start":1739715829967,"end":1739715831250,"title":"src\/test\/java\/features\/restfulBooker\/partialUpdateBooking\/PartialUpdateBooking[1:9] 17:23:49.967-17:23:51.250 Check correct request to partially update a reservation receive 200"},{"id":10,"group":1,"content":"src\/test\/java\/features\/restfulBooker\/updateBooking\/UpdateBooking[1:9]","start":1739715831533,"end":1739715832833,"title":"src\/test\/java\/features\/restfulBooker\/updateBooking\/UpdateBooking[1:9] 17:23:51.533-17:23:52.833 Check correct request to update a reservation receive 200"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

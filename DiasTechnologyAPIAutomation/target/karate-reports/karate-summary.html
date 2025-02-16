@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("3ab56177-1fd8-4e05-8453-1477f87ea647",{name:"USER"});
+    posthog.capture("report_summary",{karate_version:"1.3.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Karate Summary Report</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">10</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Features</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-02-16 05:23:53 ÖS</div>
+  </div>
+</div>
+
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
+        </div>
+        <table class="features-table table table-sm">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.common.CreateBooking.html">src/test/java/features/common/CreateBooking.feature</a>
+              </td>
+              <td>Test API for Booking - CreateBooking</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1905</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.common.CreateToken.html">src/test/java/features/common/CreateToken.feature</a>
+              </td>
+              <td title="This service is used for the generation of the token
+  where the user will log in to the service by performing a login">Create Token</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">535</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.createBooking.CreateBooking.html">src/test/java/features/restfulBooker/createBooking/CreateBooking.feature</a>
+              </td>
+              <td>Test API for Booking - CreateBooking</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">440</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.createToken.CreateToken.html">src/test/java/features/restfulBooker/createToken/CreateToken.feature</a>
+              </td>
+              <td title="This service is used for the generation of the token
+  where the user will log in to the service by performing a login">Create Token</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">430</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.deleteBooking.DeleteBooking.html">src/test/java/features/restfulBooker/deleteBooking/DeleteBooking.feature</a>
+              </td>
+              <td>Test API for Booking - DeleteBooking</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1288</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.getBooking.GetBooking.html">src/test/java/features/restfulBooker/getBooking/GetBooking.feature</a>
+              </td>
+              <td title="This service is used to obtain all bookingIds"></td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">589</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.getBookingId.GetBookingId.html">src/test/java/features/restfulBooker/getBookingId/GetBookingId.feature</a>
+              </td>
+              <td title="This service is used to be able to
+  check the reservation by booking id">Get Booking Ids</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">860</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.healthCheck.HealthCheck.html">src/test/java/features/restfulBooker/healthCheck/HealthCheck.feature</a>
+              </td>
+              <td title="This service is used to verify the status of the service">Health Check</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">423</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.partialUpdateBooking.PartialUpdateBooking.html">src/test/java/features/restfulBooker/partialUpdateBooking/PartialUpdateBooking.feature</a>
+              </td>
+              <td title="This service is used to partially update the customer reservations">Partial Update BOOKING</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1282</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="src.test.java.features.restfulBooker.updateBooking.UpdateBooking.html">src/test/java/features/restfulBooker/updateBooking/UpdateBooking.feature</a>
+              </td>
+              <td title="This service is used to update the customer reservations">Update BOOKING</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1295</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
